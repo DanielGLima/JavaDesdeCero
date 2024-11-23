@@ -14,7 +14,6 @@ package GestorDeTareas;
 //VALIDAR ENTRADAS DEL USUARIO PARA EVITAR ERRORES
 
 
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -45,10 +44,13 @@ public class GestorDeTareas {
                     String agregarTarea = scanner.next();
                     agregarTarea = agregarTarea.toLowerCase();
                     listaDetareas.add(agregarTarea);
-                    System.out.println("Cual es el estado de la tarea?  completado/pendiente");
-                    String estadoTarea = scanner.next();
-                    estadoTarea = estadoTarea.toUpperCase();
-                    estadoTareas.add(estadoTarea);
+
+                    //CAMBIO, EN VEZ DE SOLICITARLE AL USUARIO COLOCARLO PENDIENTE DESDE EL INICIO
+//                    System.out.println("Cual es el estado de la tarea?  completado/pendiente");
+//                    String estadoTarea = scanner.next();
+//                    estadoTarea = estadoTarea.toUpperCase();
+//                    estadoTareas.add(estadoTarea);
+                    estadoTareas.add("PENDIENTE");
                     break;
                 case 2:
                     System.out.println("Lista de tareas: ");
@@ -75,6 +77,7 @@ public class GestorDeTareas {
                     }else {
                         eliminar = eliminar - 1;
                         listaDetareas.remove(eliminar);
+                        estadoTareas.remove(eliminar);
                         System.out.println("el numero de tarea a sido eliminado con exito. ");
                     }
                     break;
