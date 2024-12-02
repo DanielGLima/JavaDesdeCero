@@ -3,7 +3,6 @@ package GestorDeTareas;
 //Uso de listass dinamicas con ArrayList
 //Menu interactivo con bucles y estructuras de control
 //Manipulacion de datos dentro de una lista
-//Uso de metodos para modulizar el codigo
 
 //REQUERIMIENTOS DEL PROYECTO
 //MOSTRAR UN MENU INTERACTIVO CON LA OPCIONES (AGREGAR,MOSTRAR, MARCAR UNA TAREA,ELIMINAR, SALIR)
