@@ -21,6 +21,7 @@ import java.util.Scanner;
 
 public class GestorDeContactos {
     public static void main(String[] args) {
+        GestorDeContactos gestorDeContactos = new GestorDeContactos();
         Scanner scan = new Scanner(System.in);
 
         ArrayList<String> Contactos= new ArrayList<>();
@@ -47,6 +48,7 @@ public class GestorDeContactos {
             scan.nextLine();
 
             switch(opcion){
+                case 1 -> gestorDeContactos.nuevoContacto(scan);
 
             }
 
